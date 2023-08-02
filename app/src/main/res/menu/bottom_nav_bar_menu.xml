@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/scheduleFragment"
+        android:enabled="true"
+        android:icon="@drawable/calendar_today"
+        android:title="@string/lessons" />
+    <item
+        android:id="@+id/requestsFragment"
+        android:enabled="true"
+        android:icon="@drawable/checkmarksquare"
+        android:title="@string/requests" />
+    <item
+        android:id="@+id/addFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/chatFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/moreFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_more_horiz_24"
+        android:title="@string/more" />
+
+
+</menu>

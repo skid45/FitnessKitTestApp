@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/lesson_item_color_view"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:background="@color/colorOnSurface"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lesson_item_color_view"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lesson_item_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="13:45" />
+
+                <TextView
+                    android:id="@+id/lesson_item_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="@id/lesson_item_trainer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lesson_item_trainer"
+                    tools:text="14:45" />
+
+                <TextView
+                    android:id="@+id/lesson_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                    app:layout_constraintEnd_toStartOf="@id/lesson_item_duration"
+                    app:layout_constraintStart_toEndOf="@id/lesson_item_start_time"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Силовая тренировка" />
+
+                <TextView
+                    android:id="@+id/lesson_item_trainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:drawableStartCompat="@drawable/ic_person"
+                    app:layout_constraintEnd_toStartOf="@id/lesson_item_place"
+                    app:layout_constraintStart_toStartOf="@id/lesson_item_name"
+                    app:layout_constraintTop_toBottomOf="@id/lesson_item_name"
+                    tools:text="Орешкин Андрей" />
+
+                <TextView
+                    android:id="@+id/lesson_item_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="@id/lesson_item_start_time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lesson_item_start_time"
+                    tools:text="1ч. 15мин." />
+
+                <TextView
+                    android:id="@+id/lesson_item_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:drawableStartCompat="@drawable/ic_location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lesson_item_trainer"
+                    app:layout_constraintTop_toTopOf="@id/lesson_item_trainer"
+                    tools:text="Студия 2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</FrameLayout>

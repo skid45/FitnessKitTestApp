@@ -1,8 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
     <style name="Base.Theme.FitnessKitTestApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="colorPrimary">@color/colorSurface</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSecondaryContainer">@color/colorOnSecondaryContainer</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariant</item>
+        <item name="colorError">@color/colorError</item>
     </style>
 
     <style name="Theme.FitnessKitTestApp" parent="Base.Theme.FitnessKitTestApp" />

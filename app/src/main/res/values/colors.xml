@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorOnSecondaryContainer">#8A1FCC</color>
+    <color name="colorSurface">#F7EFFC</color>
+    <color name="colorOnSurface">#8A1FCC</color>
+    <color name="colorOnSurfaceVariant">#9E9D9D</color>
+    <color name="colorError">#EF3939</color>
+
+    <color name="shimmerStartColor">#DFDFDF</color>
+    <color name="shimmerEndColor">#B6B6B6</color>
 </resources>
