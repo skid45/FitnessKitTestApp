@@ -8,4 +8,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="schedule">Расписание</string>
+    <string name="network_request_failure">Не получается обновить данные.\nЧто-то пошло не так.</string>
+    <string name="network_connection_error">Не получается обновить данные.\nВозможно соединение с интернетом прервано.</string>
 </resources>

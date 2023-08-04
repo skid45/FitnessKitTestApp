@@ -7,6 +7,10 @@ import com.skid.fitnesskittestapp.domain.usecases.GetSortedScheduleUseCase
 
 class FitnessKitApp : Application() {
     private val scheduleService by lazy { ScheduleService() }
-    private val scheduleRepository by lazy { ScheduleRepositoryImpl(scheduleService) }
+    private val scheduleRepository by lazy {
+        ScheduleRepositoryImpl(
+            scheduleService = scheduleService, context = applicationContext
+        )
+    }
     val getSortedScheduleUseCase by lazy { GetSortedScheduleUseCase(scheduleRepository) }
 }

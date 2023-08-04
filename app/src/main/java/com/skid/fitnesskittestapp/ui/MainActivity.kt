@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        addFragment(R.id.fragment_container, ScheduleFragment())
+        if (savedInstanceState == null) {
+            addFragment(R.id.fragment_container, ScheduleFragment())
+        }
     }
 }
